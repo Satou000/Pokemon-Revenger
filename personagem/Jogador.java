@@ -7,12 +7,17 @@ public abstract class Jogador extends Personagem {
 
     private List<String> inventarioPistas;
     private int contadorInacao = 0;
+    
+    private int contadorTraicao;
+    private int contadorLealdade;
 
     //Método construtor:
     public Jogador(String nome, int hpMax, int atk, int def, int agi, int nivel) {
         super(nome, hpMax, atk, def, agi, nivel);
         
         this.inventarioPistas = new ArrayList<>();
+        this.contadorTraicao = 0;
+        this.contadorLealdade = 0;
     }
 
     @Override
@@ -45,4 +50,23 @@ public abstract class Jogador extends Personagem {
     public int getContadorInacao() {
         return this.contadorInacao;
     }
+    
+    public void adicionarTraicao(int valor) {
+        this.contadorTraicao += valor;
+        System.out.println("   | (Sua relação com seus aliados mudou...)");
+    }
+
+    public void adicionarLealdade(int valor) {
+        this.contadorLealdade += valor;
+        System.out.println("   | (Um laço de lealdade foi formado.)");
+    }
+
+    public int getContadorTraicao() {
+        return this.contadorTraicao;
+    }
+
+    public int getContadorLealdade() {
+        return this.contadorLealdade;
+    }
+    
 }
