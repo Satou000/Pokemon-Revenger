@@ -19,10 +19,8 @@ public class EstrategiaBatalhaCap1 implements IEstrategiaBatalha {
     @Override
     public void executarTurnoJogador(int escolha, Personagem p1, Personagem p2, Scanner scanner, Batalha batalha) {
         
-        System.out.println("\n(O Fim do Paraíso)");
         Util.pausar(1);
 
-        // --- SEU TEXTO DOS RESULTADOS ---
         switch (escolha) {
             case 1: // Lutar
                 System.out.println("Você dispara seu ataque (ATK " + p1.getAtk() + "), mas o Quilava (AGI " + p2.getAgi() + ") o desvia com um movimento treinado...");
@@ -43,10 +41,10 @@ public class EstrategiaBatalhaCap1 implements IEstrategiaBatalha {
         p1.setHp(1); 
         batalha.setBatalhaTerminou(true); // Termina a batalha
         
-        // --- SEU TEXTO DA CONCLUSÃO ---
+        // --- CONCLUSÃO ---
         Util.pausar(2);
         System.out.println("\n(Qualquer escolha que você faça é fútil. A diferença de poder é muito grande.)");
-        System.out.println("(Esta é uma batalha impossível de vencer. A narrativa exige sua captura.)");
+        System.out.println("(Esta é uma batalha impossível de vencer...)");
         System.out.println("(HP " + p1.getHp() + "/" + p1.getHpMax() + ")");
         
         // Aguarda o jogador para o Capítulo 1 continuar

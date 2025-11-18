@@ -14,7 +14,7 @@ public class CapituloDois implements Capitulo {
     public ResultadoCapitulo executar(Jogador jogador, Scanner scanner) {
         System.out.println("\n--- CAPÍTULO 2: A GAIOLA ---");
         
-        // Força o HP do jogador para 1, como no roteiro
+        // Força o HP do jogador para 1
         jogador.setHp(1);
         System.out.println("\n(A tela está preta.) ...dor... ...frio...");
         System.out.println("A dor é a primeira coisa que você sente. (HP: " + jogador.getHp() + "/" + jogador.getHpMax() + " [PERIGO])");
@@ -63,7 +63,7 @@ public class CapituloDois implements Capitulo {
             Util.pausar(3);
             
             System.out.println("\n(Você acorda com o som da porta do porão se abrindo.)");
-            // Recupera um pouco de HP, como no roteiro
+            // Recupera um pouco de HP
             jogador.setHp(5);
             System.out.println("(Seu corpo recuperou o mínimo de energia. HP: " + jogador.getHp() + "/" + jogador.getHpMax() + ")");
             System.out.println("Humano: \"Levanta. Temos um encontro. E tente não parecer tão patético.\"");

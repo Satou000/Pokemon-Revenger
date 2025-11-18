@@ -182,7 +182,6 @@ public class CapituloUm implements Capitulo {
 
         // --- CENA 5: A CAPTURA ---
 
-        System.out.println("\n(A Captura)");
         System.out.println("Você está no chão, ofegante (HP " + jogador.getHp() + "/" + jogador.getHpMax() + "). O gosto de poeira na boca.");
         System.out.println("(Onde está Sentret? Você não o vê. Ele deve ter fugido para a grama alta quando você o protegeu...)");
         Util.aguardarEnter(scanner);
@@ -208,8 +207,7 @@ public class CapituloUm implements Capitulo {
         jogador.mostrarStatus();
         Util.aguardarEnter(scanner);
 
-        System.out.println("\n(Seu paraíso... perdido.)");
-        System.out.println("\n(Fim do Capítulo 1.)");
+        System.out.println("\n(Fim do Capítulo 1)");
         Util.aguardarEnter(scanner);
         
         // Bônus de EXP de Sobrevivência
@@ -218,7 +216,6 @@ public class CapituloUm implements Capitulo {
         // O jogador agora é Nível 2.
         jogador.mostrarStatus();
         
-        System.out.println("\n(Seu paraíso... perdido.)");
         System.out.println("\n(Fim do Capítulo 1.)");
         return ResultadoCapitulo.continuar();
     }

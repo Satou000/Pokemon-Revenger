@@ -6,10 +6,7 @@ import personagem.Inimigo;
 import personagem.Jogador;
 import util.Util;
 
-/**
- * CRITÉRIO: Implementação de Interface
- * Implementa a lógica do Capítulo 3.
- */
+
 public class CapituloTres implements Capitulo {
 
     @Override
